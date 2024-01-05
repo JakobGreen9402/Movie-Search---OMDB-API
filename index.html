@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Dev Assignment 2</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="images/movie_tape_favicon.webp">
+</head>
+<body>
+    <h1>Get Movie Information!</h1>
+    <div class="container">
+        <div class="inputs">
+    <div class="movie-text">
+        <label for="movieInput">Enter Movie Title:</label>
+        <input type="text" id="movieInput" placeholder="Enter movie title" onkeypress="handleKeyPress(event)">
+        <button id="textInputButton">Search Movie!</button>
+    </div>
+    <div class="movie-dropdown">
+        <label for="movieSelect">Select a Movie:</label>
+        <select id="movieSelect">
+            <option value="">-- Select a Star Wars movie --</option>
+            <option value="Star Wars">Star Wars</option>
+            <option value="The Empire Strikes Back">The Empire Strikes Back</option>
+            <option value="Return of the Jedi">Return of the Jedi</option>
+        </select>
+        <button id="selectButton">Go!</button>
+        </div>
+        <div class="reset-btn-div">
+            <button class="reset-btn" type="reset" onclick="reset()">Reset/Choose New Movie</button>
+        </div>
+    </div>
+</div>
+<div class="container">
+    <div class="movieResults">
+        <div id="movieInfo">
+        
+        </div>
+    </div>
+</div>
+    <script src="script.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+</body>
+</html>
